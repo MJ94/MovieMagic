@@ -14,7 +14,7 @@ public class MainActivity extends ActionBarActivity {
     EditText etMovieTitle;
 
 
-    protected void OnCreate (Bundle savedInstanceState) {
+    protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         etMovieTitle = (EditText) findViewById(R.id.etMovieTitle);
