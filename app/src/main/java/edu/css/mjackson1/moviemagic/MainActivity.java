@@ -13,7 +13,7 @@ public class MainActivity extends ActionBarActivity {
 
     EditText etMovieTitle;
 
-    @Override
+
     protected void OnCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
