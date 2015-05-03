@@ -1,10 +1,13 @@
 package edu.css.mjackson1.moviemagic;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 
 public class ResultsActivity extends ActionBarActivity {
@@ -16,7 +19,17 @@ public class ResultsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_results);
         txtResultsTitle = (TextView) findViewById(R.id.txtResultsTitle);
 
+
     }
+public class class1 extends Activity
+{
+    private TextView txtResultsTitle;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        txtResultsTitle.setText(getIntent().getExtras().getString("Title")); // get Title from Main Activity
+    }
+}
 
 
     @Override
