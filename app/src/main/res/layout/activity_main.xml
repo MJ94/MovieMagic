@@ -36,11 +36,11 @@
         android:layout_height="wrap_content"
         android:text="@string/btnSearch"
         android:id="@+id/btnSearch"
+        android:onClick="onClick"
         android:layout_below="@+id/etMovieTitle"
-        android:layout_marginTop="35dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/etMovieTitle"
+        android:layout_alignEnd="@+id/etMovieTitle" />
 
 </RelativeLayout>

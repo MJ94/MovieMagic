@@ -6,6 +6,6 @@
     <string name="tvAppName">Michael\'s Movie Magic</string>
     <string name="etTitle">Enter movie title here:</string>
     <string name="btnSearch">Search</string>
-    <string name="title_activity_results">ResultsActivity</string>
+    <string name="title_activity_results">Results</string>
 
 </resources>

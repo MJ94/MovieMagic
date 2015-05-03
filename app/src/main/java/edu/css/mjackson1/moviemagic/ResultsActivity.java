@@ -16,18 +16,8 @@ public class ResultsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
         txtResultsTitle = (TextView) findViewById(R.id.tvResultsTitle);
-
-
-    }
-public class class1 extends Activity
-{
-    private TextView txtResultsTitle;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
         txtResultsTitle.setText(getIntent().getExtras().getString("Title")); // get Title from Main Activity
     }
-}
 
 
     @Override
