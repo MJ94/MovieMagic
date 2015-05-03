@@ -7,8 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 
 public class ResultsActivity extends ActionBarActivity {
     TextView txtResultsTitle;
@@ -17,7 +15,7 @@ public class ResultsActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-        txtResultsTitle = (TextView) findViewById(R.id.txtResultsTitle);
+        txtResultsTitle = (TextView) findViewById(R.id.tvResultsTitle);
 
 
     }
