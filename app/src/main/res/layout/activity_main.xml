@@ -29,6 +29,7 @@
         android:layout_marginTop="54dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:inputType="textCapWords"
         android:hint="@string/etTitle" />
 
     <Button

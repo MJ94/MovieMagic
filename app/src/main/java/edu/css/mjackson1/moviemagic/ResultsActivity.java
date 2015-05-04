@@ -51,7 +51,7 @@ public class ResultsActivity extends ActionBarActivity {
                     json_data = new JSONObject(decrypted);
 
                     data = json_data.getString("Plot"); // gets the plot data
-                    rating = json_data.getString("imdbRating"); // gets the imdb/Rotten Tomatoes rating
+                    rating = "Rating: " + json_data.getString("imdbRating") + "/10 "; // gets the imdb/Rotten Tomatoes rating
                     // code for the poster data
                     String imageURL = json_data.getString("Poster");
                     URL urlImage = new URL(imageURL);
