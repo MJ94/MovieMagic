@@ -2,6 +2,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="edu.css.mjackson1.moviemagic.ResultsActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+    <item android:id="@+id/action_back" android:title="Go Back"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
