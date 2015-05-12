@@ -2,6 +2,7 @@ package edu.css.mjackson1.moviemagic;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -45,13 +46,20 @@ public class ResultsActivity extends ActionBarActivity {
                 // Execute HTTP Post Request
                 HttpResponse response = httpclient.execute(httppost);
                 String decrypted = EntityUtils.toString(response.getEntity());
-
                 JSONObject json_data;
                 try {
                     json_data = new JSONObject(decrypted);
-
+                    Log.v("JSON", json_data.toString());
                     data = json_data.getString("Plot"); // gets the plot data
                     rating = "Rating: " + json_data.getString("imdbRating") + "/10 "; // gets the imdb/Rotten Tomatoes rating
+                    final String title = json_data.getString("Title");
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            txtResultsTitle.setText(title);
+                        }
+                    });
+
                     // code for the poster data
                     String imageURL = json_data.getString("Poster");
                     URL urlImage = new URL(imageURL);
